@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CrudNutri {
+    public class ConexionBd {
+
+        private string cadena;
+        private SqlConnection con;
+        private SqlCommand command = new SqlCommand();
+
+        public bool conectar() {
+            this.cadena = "Data Source = LAPTOP-TGJ8N1S4; Initial Catalog = Nutri;" +
+                          "Integrated Security = True";
+            
+            this.con = new SqlConnection(this.cadena);
+            try {
+                this.con.Open();
+                this.command.Connection = con;
+                this.command.CommandType = CommandType.Text;
+                return true;
+            }
+            catch (Exception) {
+                return false;
+            }
+        }
+
+        private string ejecConsultaNonQuery(string consulta) {
+            this.command.CommandText = consulta;
+            try {
+                this.command.ExecuteNonQuery();
+                return "Registro insertado con éxito";
+            }
+            catch (Exception ex) {
+                return ex.ToString();
+            }
+        }
+
+        public string insertarAlumno(Alumno alumno) {
+
+            string consulta = "INSERT INTO Alumnos values ( {0} , '{1}' , {2} , '{3}' , {4} , {5} , {6} , '{7}' , '{8}' , {9} )";
+            consulta = String.Format(consulta, alumno.getMatricula().ToString(), alumno.getNombre(), alumno.getEdad().ToString(),
+                                    alumno.getSexo(), alumno.getPeso().ToString(), alumno.getAltura().ToString(), 
+                                    alumno.getImc().ToString(), alumno.getActividadFisica(), alumno.getEstatus(), 
+                                    alumno.getCalorias().ToString());
+
+            return this.ejecConsultaNonQuery(consulta);
+        }
+    }
+}
