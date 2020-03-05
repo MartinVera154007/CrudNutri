@@ -59,6 +59,7 @@
             // 
             // dataGridAlumnos
             // 
+            this.dataGridAlumnos.AllowUserToAddRows = false;
             this.dataGridAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridAlumnos.Location = new System.Drawing.Point(37, 143);
             this.dataGridAlumnos.Name = "dataGridAlumnos";

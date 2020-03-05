@@ -10,7 +10,7 @@ namespace CrudNutri {
 
     class ConsultaBd : ConexionBd {
 
-        private string consultaSelect = "Select * from Alumnos";
+        private string consultaSelect = "Select TOP 5 * from Alumnos";
         private SqlDataAdapter adapterAlumnos = new SqlDataAdapter();
         private SqlCommandBuilder builderAlumnos = new SqlCommandBuilder();
         private DataTable tablaAlumnos = new DataTable();
