@@ -123,7 +123,32 @@ namespace CrudNutri {
         }
 
         public void calcularCalorias() {
-            this.calorias = this.imc * 100;
+            
+            //Numero de calorias en reposo
+            this.calorias = 0;
+            
+            if (this.getSexo() == 'H') {
+                this.calorias = (float)(66 + (13.7 * this.peso) + (5 * this.altura * 100) - (6.75 * this.edad));
+            }
+            else if (this.getSexo() == 'M') {
+                this.calorias = (float)(655 + (9.6 * this.peso) +(1.8 * this.altura * 100) - (4.7 * this.edad));
+            }
+
+            if (this.getActividadFisica().Equals("Poco")) {
+                this.calorias = (float)(this.calorias * 1.2);
+            }
+            else if (this.getActividadFisica().Equals("Ligero")) {
+                this.calorias = (float)(this.calorias * 1.375);
+            }
+            else if (this.getActividadFisica().Equals("Moderado")) {
+                this.calorias = (float)(this.calorias * 1.55);
+            }
+            else if (this.getActividadFisica().Equals("Deportista")) {
+                this.calorias = (float)(this.calorias * 1.72);
+            }
+            else if (this.getActividadFisica().Equals("Atleta")) {
+                this.calorias = (float)(this.calorias * 1.9);
+            }
         }
     }
 }

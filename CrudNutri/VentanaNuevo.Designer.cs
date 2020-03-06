@@ -175,9 +175,11 @@
             // 
             this.comboActividadFisica.FormattingEnabled = true;
             this.comboActividadFisica.Items.AddRange(new object[] {
-            "Bajo",
-            "Medio ",
-            "Alto"});
+            "Poco",
+            "Ligero",
+            "Moderado",
+            "Deportista",
+            "Atleta"});
             this.comboActividadFisica.Location = new System.Drawing.Point(136, 306);
             this.comboActividadFisica.Name = "comboActividadFisica";
             this.comboActividadFisica.Size = new System.Drawing.Size(94, 21);

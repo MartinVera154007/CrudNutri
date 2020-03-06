@@ -65,6 +65,7 @@
             this.dataGridAlumnos.Name = "dataGridAlumnos";
             this.dataGridAlumnos.Size = new System.Drawing.Size(521, 218);
             this.dataGridAlumnos.TabIndex = 3;
+            this.dataGridAlumnos.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dataGridAlumnos_DataError);
             // 
             // btnGuardar
             // 

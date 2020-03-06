@@ -28,5 +28,10 @@ namespace CrudNutri {
             this.consulta.guardarCambios();
             MessageBox.Show("Sus cambios han sido guardados en la base de datos");
         }
+
+        private void dataGridAlumnos_DataError(object sender, DataGridViewDataErrorEventArgs e) {
+    
+            MessageBox.Show(e.Exception.Message);
+        }
     }
 }

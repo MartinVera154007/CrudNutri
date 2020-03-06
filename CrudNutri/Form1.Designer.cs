@@ -87,7 +87,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.contenido);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
+            this.ShowInTaskbar = false;
             this.Text = "Nutri CRUD";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

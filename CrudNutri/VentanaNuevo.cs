@@ -16,6 +16,7 @@ namespace CrudNutri {
 
         public VentanaNuevo() {
             InitializeComponent();
+            comboActividadFisica.SelectedIndex = 0;
 
             this.insert = new InsertBd();
             this.alumno = new Alumno();
