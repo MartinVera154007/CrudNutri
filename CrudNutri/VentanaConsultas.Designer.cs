@@ -34,24 +34,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(280, 40);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(263, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(217, 52);
             this.label1.TabIndex = 0;
             this.label1.Text = "Consultas";
             // 
             // txtConsultar
             // 
-            this.txtConsultar.Location = new System.Drawing.Point(140, 89);
+            this.txtConsultar.Location = new System.Drawing.Point(187, 110);
+            this.txtConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtConsultar.Name = "txtConsultar";
-            this.txtConsultar.Size = new System.Drawing.Size(231, 20);
+            this.txtConsultar.Size = new System.Drawing.Size(307, 22);
             this.txtConsultar.TabIndex = 1;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(389, 87);
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(519, 107);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(123, 34);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -61,17 +66,21 @@
             // 
             this.dataGridAlumnos.AllowUserToAddRows = false;
             this.dataGridAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridAlumnos.Location = new System.Drawing.Point(37, 143);
+            this.dataGridAlumnos.Location = new System.Drawing.Point(49, 176);
+            this.dataGridAlumnos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridAlumnos.Name = "dataGridAlumnos";
-            this.dataGridAlumnos.Size = new System.Drawing.Size(521, 218);
+            this.dataGridAlumnos.RowHeadersWidth = 51;
+            this.dataGridAlumnos.Size = new System.Drawing.Size(695, 268);
             this.dataGridAlumnos.TabIndex = 3;
             this.dataGridAlumnos.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dataGridAlumnos_DataError);
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(235, 385);
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(277, 474);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(126, 23);
+            this.btnGuardar.Size = new System.Drawing.Size(217, 46);
             this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar cambios";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -79,15 +88,16 @@
             // 
             // VentanaConsultas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 450);
+            this.ClientSize = new System.Drawing.Size(800, 554);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.dataGridAlumnos);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtConsultar);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "VentanaConsultas";
             this.Text = "VentanaConsultas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAlumnos)).EndInit();

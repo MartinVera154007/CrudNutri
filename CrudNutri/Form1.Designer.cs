@@ -37,16 +37,19 @@
             this.panel1.Controls.Add(this.btnEstadisticas);
             this.panel1.Controls.Add(this.btnConsultas);
             this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Location = new System.Drawing.Point(-2, 0);
+            this.panel1.Location = new System.Drawing.Point(-3, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(204, 450);
+            this.panel1.Size = new System.Drawing.Size(272, 554);
             this.panel1.TabIndex = 0;
             // 
             // btnEstadisticas
             // 
-            this.btnEstadisticas.Location = new System.Drawing.Point(30, 170);
+            this.btnEstadisticas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstadisticas.Location = new System.Drawing.Point(40, 209);
+            this.btnEstadisticas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEstadisticas.Name = "btnEstadisticas";
-            this.btnEstadisticas.Size = new System.Drawing.Size(117, 34);
+            this.btnEstadisticas.Size = new System.Drawing.Size(156, 42);
             this.btnEstadisticas.TabIndex = 2;
             this.btnEstadisticas.Text = "Estadísticas";
             this.btnEstadisticas.UseVisualStyleBackColor = true;
@@ -54,9 +57,11 @@
             // 
             // btnConsultas
             // 
-            this.btnConsultas.Location = new System.Drawing.Point(30, 117);
+            this.btnConsultas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultas.Location = new System.Drawing.Point(40, 144);
+            this.btnConsultas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnConsultas.Name = "btnConsultas";
-            this.btnConsultas.Size = new System.Drawing.Size(117, 34);
+            this.btnConsultas.Size = new System.Drawing.Size(156, 42);
             this.btnConsultas.TabIndex = 1;
             this.btnConsultas.Text = "Consultas";
             this.btnConsultas.UseVisualStyleBackColor = true;
@@ -64,9 +69,11 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(30, 66);
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Location = new System.Drawing.Point(40, 81);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(117, 34);
+            this.btnNuevo.Size = new System.Drawing.Size(156, 42);
             this.btnNuevo.TabIndex = 0;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -75,19 +82,21 @@
             // contenido
             // 
             this.contenido.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.contenido.Location = new System.Drawing.Point(201, 1);
+            this.contenido.Location = new System.Drawing.Point(268, 1);
+            this.contenido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.contenido.Name = "contenido";
-            this.contenido.Size = new System.Drawing.Size(600, 450);
+            this.contenido.Size = new System.Drawing.Size(800, 554);
             this.contenido.TabIndex = 1;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1064, 544);
             this.Controls.Add(this.contenido);
             this.Controls.Add(this.panel1);
-            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(1082, 591);
             this.Name = "Form1";
             this.ShowInTaskbar = false;
             this.Text = "Nutri CRUD";
